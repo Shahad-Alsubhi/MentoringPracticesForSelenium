@@ -1,9 +1,7 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class C01Navigate {
     public static void main(String[] args) throws InterruptedException {
@@ -19,7 +17,7 @@ public class C01Navigate {
 // Close the Browser.
 
 
-        WebDriver driver=new EdgeDriver();
+        WebDriver driver = new EdgeDriver();
 
         driver.navigate().to("https://www.w3schools.com/");
 
@@ -32,8 +30,7 @@ public class C01Navigate {
 //Thread.sleep(9000);
         driver.close();
         driver.quit();
-
-
+        driver.quit();
 
 
     }
