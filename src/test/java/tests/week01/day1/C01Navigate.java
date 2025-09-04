@@ -1,4 +1,4 @@
-package tests;
+package tests.week01.day1;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;

@@ -1,4 +1,4 @@
-package tests.JUnit;
+package tests.week01.day2;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
