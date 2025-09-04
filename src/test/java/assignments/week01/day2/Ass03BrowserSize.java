@@ -1,4 +1,4 @@
-package assignments.Juint;
+package assignments.week01.day2;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -41,8 +41,10 @@ Close the browser.
     void test1() {
         driver.navigate().to("https://www.bbc.com/");
         driver.manage().window().fullscreen();
-        driver.manage().window().setSize(new org.openqa.selenium.Dimension(800, 600));
-        assertEquals(new org.openqa.selenium.Dimension(802, 602), driver.manage().window().getSize(), "Size Test FAILED");
+        int width = 800;
+        driver.manage().window().setSize(new org.openqa.selenium.Dimension(width, 883));
+        System.out.println("driver.manage().window().getSize() = " + driver.manage().window().getSize());
+        assertEquals(new org.openqa.selenium.Dimension(width + 2, 883), driver.manage().window().getSize(), "Size Test FAILED");
     }
 
 

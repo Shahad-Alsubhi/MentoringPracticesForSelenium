@@ -1,4 +1,4 @@
-package assignments;
+package assignments.week01.day1;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
