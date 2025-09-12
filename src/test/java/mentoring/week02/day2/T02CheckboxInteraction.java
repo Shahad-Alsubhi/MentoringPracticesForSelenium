@@ -1,4 +1,4 @@
-package tests.week02.day2;
+package mentoring.week02.day2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

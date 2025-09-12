@@ -1,4 +1,4 @@
-package tests.week02.day2;
+package mentoring.week02.day2;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Assertions;

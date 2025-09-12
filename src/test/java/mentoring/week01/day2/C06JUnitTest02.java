@@ -1,4 +1,4 @@
-package tests.week01.day2;
+package mentoring.week01.day2;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;

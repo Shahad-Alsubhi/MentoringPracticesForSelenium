@@ -1,4 +1,4 @@
-package tests.week02.day3;
+package mentoring.week02.day3;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

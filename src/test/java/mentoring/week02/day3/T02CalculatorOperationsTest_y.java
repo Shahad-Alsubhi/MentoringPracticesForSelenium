@@ -1,4 +1,4 @@
-package tests.week02.day3;
+package mentoring.week02.day3;
 
 
 import org.junit.jupiter.api.AfterEach;
@@ -50,7 +50,7 @@ public class T02CalculatorOperationsTest_y {
         //   Click Calculate for each operation
 
         for (int i = 0; i < operations.length; i++) {
-            Thread.sleep(5000);
+
             driver.findElement(firstInput).clear();
             driver.findElement(firstInput).sendKeys(num1);
             driver.findElement(secondInput).clear();
@@ -60,7 +60,8 @@ public class T02CalculatorOperationsTest_y {
             Select select = new Select(op);
             select.selectByValue(operations[i]);
             driver.findElement(By.id("calculate")).click();
-
+            // time for answer to be updated
+            Thread.sleep(3000);
             //   Get and verify results for all operations
             switch (operations[i]) {
                 case "plus" -> {
@@ -74,9 +75,9 @@ public class T02CalculatorOperationsTest_y {
                     System.out.println("Subtraction Result: " + subtractionResult); // 20 - 5
                 }
                 case "times" -> {
-                    String multiplicationResult = driver.findElement(By.id("answer")).getText();
-                    Assertions.assertEquals(expectedMulResult, multiplicationResult);
-                    System.out.println("Multiplication Result: " + multiplicationResult); // 20 * 5
+//                    String multiplicationResult = driver.findElement(By.id("answer")).getText();
+                    Assertions.assertEquals(expectedMulResult, driver.findElement(By.id("answer")).getText());
+                    System.out.println("Multiplication Result: " + driver.findElement(By.id("answer")).getText()); // 20 * 5
                 }
                 case "divide" -> {
                     String divisionResult = driver.findElement(By.id("answer")).getText();
@@ -85,7 +86,7 @@ public class T02CalculatorOperationsTest_y {
                 }
             }
             //for stale element exception
-            driver.navigate().refresh();
+            Thread.sleep(5000);
         }
 
     }
